@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+
+$main-font: 'TT Norms Pro', sans-serif;
+$secondary-font: 'Archivo', sans-serif;
+
+// Colors
+$main-color: #09090C;
+$on-main-color: #ffffff;
+$gray-color: #bababa;
+$blue-gradient: 180deg, #6A11CB 0%, #2575FC 100%;
+
+
+// Mixin
+
+@mixin blue-text-decorator {
+  background: -webkit-linear-gradient($blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: $main-color;
+}

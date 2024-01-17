@@ -1,0 +1,98 @@
+@import '@/styles/base/variables';
+
+.movie {
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+
+    &Decor {
+      width: 203px;
+      height: 67px;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 52px;
+      text-transform: uppercase;
+      @include blue-text-decorator;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+
+    &_image {
+      border-radius: 20px;
+      border: 3px solid transparent;
+      position: relative;
+
+      &_active {
+        height: 602px;
+        width: 402px;
+        padding: 2px;
+        background: linear-gradient($blue-gradient);
+        border-radius: 20px;
+        border: 20px;
+        position: relative;
+      }
+
+      &Decor {
+        width: 559px;
+        height: 597px;
+        display: flex;
+        flex-direction: row;
+
+        .movie__content_imageDecor_top {
+          font-family: $secondary-font;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 360px;
+          @include blue-text-decorator;
+
+          z-index: 0;
+        }
+        .movie__content_rate {
+          position: relative;
+          left: -83px;
+          z-index: 99;
+        } 
+      }
+    }
+    &_rate {
+      position: relative;
+    }
+
+    &_rate div{
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      background: linear-gradient($blue-gradient);
+      border-radius: 12px;
+      width: 75px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+
+      .rating {
+        font-weight: 500;
+        font-size: 28px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 28px;
+    }
+
+  }
+}

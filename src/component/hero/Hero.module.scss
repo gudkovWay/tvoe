@@ -1,0 +1,70 @@
+@import '@/styles/base/variables';
+
+.hero {
+
+  &__wrapper {
+    width: 1205px;
+    height: 800px;
+    position: relative;
+    left: 25%;
+    transform: translate(-21%, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 36px;
+    z-index: 99;
+
+    &__text {
+      max-width: 886px;
+      max-height: 482px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+
+      p {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: $main-font;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      button {
+        width: 243px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 500;
+        border-radius: 16px;
+      }
+
+      &_primary {
+        background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+      }
+
+      &_secondary {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.1) 100%);
+        backdrop-filter: blur(10px);
+      }
+    }
+
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.93%, #09090C 100%), linear-gradient(90deg, #09090C 0%, rgba(0, 0, 0, 0) 51.76%);
+  }
+}

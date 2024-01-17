@@ -1,0 +1,25 @@
+@import '@/styles/base/variables';
+
+.hero__movie {
+  &__wrapper {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+    &_text {
+      &Image {
+        position: relative;
+      }
+    }
+    
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

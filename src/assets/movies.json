@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Синий жук",
+    "image": "/movies/blue-beetle.png",
+    "rate": "10",
+    "category": "new",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Домашняя игра",
+    "image": "/movies/home-game.png",
+    "rate": "6,9",
+    "category": "new",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Салют 7",
+    "image": "/movies/salute.png",
+    "rate": "5,7",
+    "category": "new",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Поймай меня, если сможешь",
+    "image": "/movies/keep-me.png",
+    "rate": "7,0",
+    "category": "new",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Моё прекрасное несчастье",
+    "image": "/movies/beautiful-mistorfune.png",
+    "rate": "7,0",
+    "category": "watch",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Красное уведомление",
+    "image": "/movies/red-notice.png",
+    "rate": "7,0",
+    "category": "watch",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Ведьмак",
+    "image": "/movies/witch.png",
+    "rate": "7,0",
+    "category": "watch",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/wends.png",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Индиана Джонс и колесо судьбы",
+    "image": "/movies/home-game.png",
+    "imageText": "/hero/hero-text.png",
+    "imageHero": "/hero/hero.png",
+    "rate": "10",
+    "description": "Неувядающий авантюрист и пытливый археолог-исследователь по-прежнему в седле.",
+    "category": "watch",
+    "characteristics": {
+      "year": "2022",
+      "parts": "3",
+      "country": "США",
+      "genres": [
+        "Ужасы",
+        "Детектив",
+        "Криминал"
+      ],
+      "minAge": "0+"
+    }
+  }
+]
