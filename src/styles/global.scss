@@ -52,3 +52,24 @@ article {
   width: 96px;
   height: 80px;
 }
+
+.rating {
+
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  background: linear-gradient($blue-gradient);
+  border-radius: 12px;
+  width: 75px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+
+  .rate {
+
+    font-weight: 500;
+    font-size: 28px;
+  }
+}

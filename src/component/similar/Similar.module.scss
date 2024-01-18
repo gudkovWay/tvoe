@@ -1,0 +1,32 @@
+@import '@/styles/base/variables';
+
+.similar {
+  margin-top: 60px;
+
+  &__wrapper {
+
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    &_list {
+      width: 1929px;
+      height: 382px;
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      overflow-x: hidden;
+    }
+
+    &_card {
+      position: relative;
+
+      div {
+        top: 12px;
+        left: 12px;
+      }
+    }
+  }
+}

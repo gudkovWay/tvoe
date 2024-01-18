@@ -18,8 +18,8 @@ const MoviesCard: React.FC<MoviesProps> = ({ movieId, movieName, movieImage, mov
 
           <div className={styles.movie__content_rate}>
             <Image width={398} height={597} alt="Превью фильма" src={movieImage} />
-            <div>
-              <span className={styles.rating}>{movieRating}</span>
+            <div className="rating">
+              <span className="rate">{movieRating}</span>
             </div>
           </div>
         </div>

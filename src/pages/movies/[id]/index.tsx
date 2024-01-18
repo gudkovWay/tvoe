@@ -6,6 +6,9 @@ import movies from "@/assets/movies.json"
 import { useRouter } from "next/router"
 import Episodes from "@/component/episodes"
 import { HeroRenderProps } from "@/assets/types"
+import Description from "@/component/description"
+import Similar from "@/component/similar"
+import Information from "@/component/information"
 
 const Movies = () => {
   const router = useRouter()
@@ -55,6 +58,19 @@ const Movies = () => {
         amountEpisodes={currentMovie.characteristics.amountEpisodes}
         amountTime={currentMovie.characteristics.amountTime}
         episodesImage={currentMovie.characteristics.episodesImage}
+      />
+      
+      <Description description={currentMovie.characteristics.fullDescription} />
+
+      <Similar id={currentMovie.id} genres={currentMovie.characteristics.genres} />
+
+      <Information 
+        premiere={currentMovie.characteristics.premiere}
+        originalName={currentMovie.characteristics.originalName}
+        country={currentMovie.characteristics.country}
+        genres={currentMovie.characteristics.genres}
+        languages={currentMovie.characteristics.language}
+        quality={currentMovie.characteristics.quality}
       />
 
     </>
