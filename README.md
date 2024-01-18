@@ -26,3 +26,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Стек: Nextjs, scss, ts
 ### Полностью страница сериала как в дизайне - /movies/0
 
+
+## Preview:
+
+<img src="https://i.imgur.com/dcTBhZD.png" alt="preview"/>
+<img src="https://i.imgur.com/nWrs5xX.png" alt="preview"/>
+<img src="https://i.imgur.com/CLDZYVP.png" alt="preview"/>
+<img src="https://i.imgur.com/wNBHsSg.png" alt="preview"/>
+
