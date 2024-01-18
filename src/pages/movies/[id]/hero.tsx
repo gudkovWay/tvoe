@@ -3,32 +3,46 @@ import Image from "next/image"
 import { HeroRenderProps } from "@/assets/types"
 import { checkWord } from "@/assets/checkWord"
 import styles from "./Hero.module.scss"
+import Icons from "@/component/icons"
 
-const HeroMovieModel: React.FC<HeroRenderProps> = ({ description, id, imageHero, imageText, characteristics, rate }) => {
+interface HeroMovieModelProps {
+  rate: string;
+  description: string;
+  imageHero: string;
+  imageText: string;
+  characteristics: { year: string; parts: number; country: string; mainGenre: string; minAge: string; };
+}
+
+const HeroMovieModel: React.FC<HeroMovieModelProps> = ({ rate, description, imageHero, imageText, characteristics }) => {
+
   return (
     <section className={styles.hero__movie}>
       <div className="container">
         <div className={styles.hero__movie__wrapper}>
           <div className={styles.hero__movie__wrapper_text}>
-            <Image src={imageText} width={367} height={132} alt="movie text" className={styles.hero__movie__wrapper_textImage}/>
+            <Image src={imageText} width={367} height={132} alt="movie text" className={styles.hero__movie__wrapper_textImage} />
             <div className={styles.hero__movie__wrapper_text_characteristic}>
-              <p className={styles.rating__movie}>{rate}</p>
-              <p>{characteristics.year}</p>
-              <p>{characteristics.parts} {checkWord(characteristics.parts, ['сезон', 'сезона', 'сезонов'])}</p>
-              <p>{characteristics.country}</p>
-              <p>{characteristics.genres[0]}</p>
-              <p>{characteristics.minAge}</p>
+              <div className={styles.hero__movie__wrapper_text_characteristic_items}>
+                <p className={styles.rating__movie}>{rate}</p>
+                <p>{characteristics.year}</p>
+                <p>{characteristics.parts} {checkWord(characteristics.parts, ['сезон', 'сезона', 'сезонов'])}</p>
+                <p>{characteristics.country}</p>
+                <p>{characteristics.mainGenre}</p>
+                <p>{characteristics.minAge}</p>
+              </div>
+              <div className={styles.hero__movie__wrapper_text_characteristic_description}>
+                <p>{description}</p>
+              </div>
             </div>
-            <p>{description}</p>
           </div>
           <div className={styles.hero__movie__wrapper_buttons}>
-            Смотреть
-            Трейлер
-            Закладки
-            Любимый
+            <button className="primaryButton">Смотреть</button> 
+            <button className="secondaryButton">Трейлер</button> 
+            <button className="secondaryButton miniButton"><Icons iconName="favorite"/></button> 
+            <button className="secondaryButton miniButton"><Icons iconName="likeMovie"/></button> 
           </div>
-          <Image src={imageHero} width={1400} height={780} alt="Preview movie" />
         </div>
+        <Image src={imageHero} width={1400} height={780} alt="Preview movie" className={styles.hero__movie__wrapper_image} />
       </div>
     </section>
   )

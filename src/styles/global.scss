@@ -1,7 +1,7 @@
 @import './base/variables';
 
 * {
-  border: none; 
+  border: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,12 +9,15 @@
   color: $on-main-color;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   text-decoration: none;
 }
 
-li, a, li a {
+li,
+a,
+li a {
   text-decoration: none;
 }
 
@@ -24,8 +27,8 @@ body {
 }
 
 .container {
-  width: 1605px;
-  margin: 0 auto;
+  width: 1705px;
+  margin-left: 161px;
 }
 
 article {
@@ -34,4 +37,18 @@ article {
 
 .last {
   padding-bottom: 203px;
+}
+
+.primaryButton {
+  background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
+}
+
+.secondaryButton {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.miniButton {
+  width: 96px;
+  height: 80px;
 }

@@ -4,27 +4,37 @@ import Header from "@/component/header"
 import Hero from "./hero"
 import movies from "@/assets/movies.json"
 import { useRouter } from "next/router"
+import Episodes from "@/component/episodes"
+import { HeroRenderProps } from "@/assets/types"
 
 const Movies = () => {
   const router = useRouter()
-  const [movieId, setMovieId] = useState(0)
-  const [movieName, setMovieName] = useState("")
-  const [movieRate, setMovieRate] = useState("")
-  const [heroImage, setHeroImage] = useState("")
-  const [heroText, setHeroText] = useState("")
-  const [movieDescription, setMovieDescription] = useState("")
-  const [movieCharacteristics, setMovieCharacteristics] = useState({})
+
+  const [currentMovie, setCurrentMovie] = useState<HeroRenderProps>({
+    id: 0,
+    name: "",
+    image: "",
+    rate: "",
+    category: "",
+    imageText: "",
+    imageHero: "",
+    description: "",
+    characteristics: {
+      year: "", parts: 0, premiere: "", country: "", originalName: "", minAge: "", fullDescription: "", mainGenre: "",
+      amountEpisodes: [], genres: [], language: [], quality: [],
+      amountTime: {
+        firstEpisode: [],
+        secondEpisode: [],
+        thirdEpisode: []
+      },
+      episodesImage: []
+    }
+  })
 
   useEffect(() => {
-    movies.map((movie) => {
-      if (movie.id == router.query.id) {
-        setMovieId(movie.id)
-        setMovieName(movie.name)
-        setMovieRate(movie.rate)
-        setHeroImage(movie.imageHero)
-        setHeroText(movie.imageText)
-        setMovieDescription(movie.description)
-        setMovieCharacteristics(movie.characteristics)
+    movies.find((movie) => {
+      if (movie.id == Number(router.query.id)) {
+        setCurrentMovie(movie)
       }
     })
   }, [router.query.id])
@@ -32,14 +42,21 @@ const Movies = () => {
   return (
     <>
       <Header />
-      <Hero 
-        characteristics={movieCharacteristics}
-        description={movieDescription}
-        imageText={heroText}
-        imageHero={heroImage}
-        rate={movieRate}
-        id={movieId}
+      <Hero
+        rate={currentMovie.rate}
+        imageHero={currentMovie.imageHero}
+        imageText={currentMovie.imageText}
+        description={currentMovie.description}
+        characteristics={currentMovie.characteristics}
       />
+
+      <Episodes
+        parts={currentMovie.characteristics.parts}
+        amountEpisodes={currentMovie.characteristics.amountEpisodes}
+        amountTime={currentMovie.characteristics.amountTime}
+        episodesImage={currentMovie.characteristics.episodesImage}
+      />
+
     </>
   )
 }

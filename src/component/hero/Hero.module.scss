@@ -47,17 +47,7 @@
         font-weight: 500;
         border-radius: 16px;
       }
-
-      &_primary {
-        background: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
-      }
-
-      &_secondary {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.1) 100%);
-        backdrop-filter: blur(10px);
-      }
     }
-
   }
 
   &__image {

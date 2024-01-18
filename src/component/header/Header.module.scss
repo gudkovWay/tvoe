@@ -1,10 +1,10 @@
 @import '@/styles/base/variables';
 
 .header {
-  max-width: 170px;
+  width: 70px;
   position: fixed;
   margin-top: 40px;
-  margin-left: 55px;
+  padding-left: 55px;
 
   nav {
     height: 85vh;

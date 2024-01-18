@@ -13,10 +13,10 @@ const HeroHomeModel: React.FC<HeroRenderProps> = ({  description, id, imageHero,
           <p>{description}</p>
           <div className={styles.hero__wrapper__buttons}>
             <Link href={`/movies/${id}`}>
-              <button className={styles.hero__wrapper__buttons_primary}>Смотреть</button>
+              <button className="primaryButton">Смотреть</button>
             </Link>
             <Link href={`/movies/${id}#description`}>
-              <button className={styles.hero__wrapper__buttons_secondary}>О фильме</button>
+              <button className="secondaryButton">О фильме</button>
             </Link>
           </div>
         </div>
