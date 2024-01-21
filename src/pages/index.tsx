@@ -1,7 +1,8 @@
+import Head from 'next/head'
+
 import Header from '@/component/header'
 import Hero from '@/component/hero'
 import Movie from '@/component/movies'
-import Head from 'next/head'
 
 
 export default function Home() {

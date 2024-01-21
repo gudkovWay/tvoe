@@ -27,13 +27,17 @@ export type HeroRenderProps = {
   };
 }
 
-export type HeroRenderCharacteristicsProps = {
-    year: string; parts: number; premiere: string; country: string; originalName: string; minAge: string; mainGenre: string; fullDescription: string;
-    amountEpisodes: number[]; genres: string[]; language: string[]; quality: string[];
-    amountTime: {
-      firstEpisode: number[];
-      secondEpisode: number[];
-      thirdEpisode: number[]
-    };
-    episodesImage: string[]
+export type HeroHomeProps = {
+  description: string;
+  id: number;
+  imageHero: string;
+  imageText: string
+}
+
+export type HeroMovieModelProps = {
+  rate: string;
+  description: string;
+  imageHero: string;
+  imageText: string;
+  characteristics: { year: string; parts: number; country: string; mainGenre: string; minAge: string; };
 }

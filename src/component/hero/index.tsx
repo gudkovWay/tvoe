@@ -1,20 +1,18 @@
-import Hero from "./Hero";
 import movies from "@/assets/movies.json";
+import HeroHomeModel from "./model/home";
 
-const HeroContainer = () => {
+const Hero = () => {
   return (
     <>
       {movies
         .filter((movie) => movie.id !== 0)
-        .slice(0,1)
+        .slice(0, 1)
         .map((movie) => (
-          <Hero
+          <HeroHomeModel
             key={movie.id}
             id={movie.id}
             imageHero={movie.imageHero}
             imageText={movie.imageText}
-            rate={movie.rate}
-            characteristic={movie.characteristics}
             description={movie.description}
           />
         ))}
@@ -22,4 +20,4 @@ const HeroContainer = () => {
   )
 };
 
-export default HeroContainer;
+export default Hero;

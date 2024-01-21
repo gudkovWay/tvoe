@@ -1,8 +1,8 @@
 import Image from "next/image";
-
-import movies from "@/assets/movies.json"
-import styles from "./Similar.module.scss";
 import Link from "next/link";
+
+import styles from "./Similar.module.scss";
+import movies from "@/assets/movies.json"
 
 interface SimilarProps {
   id: number;

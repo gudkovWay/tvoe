@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
 
 import Header from "@/component/header"
-import Hero from "./hero"
-import movies from "@/assets/movies.json"
-import { useRouter } from "next/router"
+import HeroMovieModel from "@/component/hero/model/movie"
 import Episodes from "@/component/episodes"
-import { HeroRenderProps } from "@/assets/types"
 import Description from "@/component/description"
 import Similar from "@/component/similar"
 import Information from "@/component/information"
+
+import { HeroRenderProps } from "@/assets/types"
+import movies from "@/assets/movies.json"
 
 const Movies = () => {
   const router = useRouter()
@@ -45,7 +46,7 @@ const Movies = () => {
   return (
     <>
       <Header />
-      <Hero
+      <HeroMovieModel
         rate={currentMovie.rate}
         imageHero={currentMovie.imageHero}
         imageText={currentMovie.imageText}

@@ -1,6 +1,6 @@
 import MoviesCard from './Card'
-import movies from '@/assets/movies.json'
 import styles from './Movie.module.scss'
+import movies from '@/assets/movies.json'
 
 type MovieProps = {
   category: "New" | "Watch"

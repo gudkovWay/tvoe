@@ -1,17 +1,10 @@
 import Image from "next/image"
 
-import { HeroRenderProps } from "@/assets/types"
-import { checkWord } from "@/assets/checkWord"
-import styles from "./Hero.module.scss"
 import Icons from "@/component/icons"
+import styles from "./HeroMovie.module.scss"
+import { HeroMovieModelProps } from "@/assets/types"
+import { checkWord } from "@/utils/checkWord"
 
-interface HeroMovieModelProps {
-  rate: string;
-  description: string;
-  imageHero: string;
-  imageText: string;
-  characteristics: { year: string; parts: number; country: string; mainGenre: string; minAge: string; };
-}
 
 const HeroMovieModel: React.FC<HeroMovieModelProps> = ({ rate, description, imageHero, imageText, characteristics }) => {
 

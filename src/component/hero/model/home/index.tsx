@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { HeroRenderProps } from "@/assets/types"
-import styles from "../Hero.module.scss"
+import { HeroHomeProps } from "@/assets/types"
+import styles from "./HeroHome.module.scss"
 
-const HeroHomeModel: React.FC<HeroRenderProps> = ({  description, id, imageHero, imageText }) => {
+const HeroHomeModel: React.FC<HeroHomeProps> = ({  description, id, imageHero, imageText }) => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero__wrapper}>

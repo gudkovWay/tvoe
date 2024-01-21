@@ -1,6 +1,7 @@
+import Link from 'next/link';
+
 import Icons from '@/component/icons';
 import styles from "./Header.module.scss"
-import Link from 'next/link';
 
 const Header = () => {
   return (

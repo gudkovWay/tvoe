@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+
 import styles from './Movie.module.scss'
 import { MoviesProps } from '@/assets/types'
 

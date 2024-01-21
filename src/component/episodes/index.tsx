@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import styles from './Episodes.module.scss'
-import { checkWord } from '@/assets/checkWord';
+import { checkWord } from '@/utils/checkWord';
 
 interface EpisodesProps {
   parts: number;
