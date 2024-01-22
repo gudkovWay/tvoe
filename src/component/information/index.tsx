@@ -26,7 +26,7 @@ const Information: React.FC<InformationProps> = ({premiere, originalName, countr
             </li>
             <li>
               <span>Язык аудиодорожки</span>
-              <p>{languages}</p>
+              <p>{languages.join(', ')}</p>
             </li>
             <li>
               <span>Оригинальное название</span>
